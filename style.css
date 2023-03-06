@@ -43,7 +43,8 @@ header > a {
         
 }   
 header > a > img {
-    width: 48px;
+    width: 50px;
+    vertical-align: middle
 }
 header > a > strong {
     vertical-align: middle;
