@@ -1,179 +1,280 @@
-* {
+body, html {
     margin: 0;
     padding: 0;
-}
-.references {
-   text-align: center;
-border: 2px solid #000;
-    width: 96%;
-    margin: 24px auto;
-    padding: 24px;
-    
-}
-.references > section {
-    display: inline-block;
-}
-.references > section > div.photo {
-   width: 96px;
-    height: 96px;
-    margin: 9px auto;
-    border-radius: 96px; 
-    background-color: #ccc;
-}
-.references > section > strong {
-    font: 700 18px/24px comic sans ms; 
-    text-transform: uppercase;
-}
-.references > section > p {
-    font: 400 16px/24px comic sans ms;
-    color: #333;
-}
-.references > section > span {
-    font: 400 16px/24px comic sans ms;
-    
+    background-color: #000080;
 }
 
-
-
-
-.professional {
-    text-align: center;
+header {   
+    white-space: nowrap;
+    background: #1fa8ce; 
 }
-
-.professional > section {
-    display: inline-block;
-    width: 32%;
-    border-left: 2px solid #000;
-    vertical-align: top;
-    padding: 12px
-    
+header > .hamburger {
+    position: absolute;
+    z-index: 500;
+    top: 20px;
+    left: -48px;
+    width: 48px;
+    height: 48px;
+        transition: all 1s ease-out 0.5s;
 }
-.professional > section:first-of-type {
-    border-left: none;
-    text-align: left;
-}
-.professional > section > h2 {
-    font: 900 18px/24px comic sans ms;
-    text-align: center;
-    margin: 0 0 24px 0;
-    text-transform: capitalize;
-    
-    
-}
-.employment {
-    text-align: left
-}
-.employment > div {
-    
-}
-.employment > div > p {
-    
-}
-.employment > div > .date {
-    font: 580 18px/18px arial;
-} 
-.employment > div > .company {
-    font: 480 14px/14px arial;
-}
-.employment > div > .position {
-    font: 480 14px/14px arial;
-}
-
-.employment > div > .manager {
-    font: 480 14px/14px arial;
-}
-
-
-
-.skills {
-    text-align: left;
-}
-.skills > strong {
-    font: 700 16px/18px arial;
-}
-.skills > div {
-    height: 36px;
-    border: 2px solid #000;
-    border-radius: 96px;
-}
-.skills > div > span {
-    display: block;
-    background-color: #f16;
-    height: 32px;
-    border-radius: 96px;
-    border: 2px solid #fff;
-    
-}
-
-.professional > section.projects {
-    display: block;
-    margin: 0 auto;
-    max-width: 540;
-    width: 100%;
-}
-.projects > img {
-    width: 100%;
-    
-}
-.personal {
-    text-align: center;
-}
-.personal > section {
-    float: left;
-    vertical-align: top;
-    max-width: 49%;
-    width: 50%
-}
-.personal > section > h3 {
-    font: 700 16px/18px arial;
-}
-.personal > section > ul > li {
-    color: #000;
-    list-style: none;
-    border: 1px solid #000;
-    border-radius: 96px;
-    padding: 12px;
-    max-width: 90%;
-    
-}
-.personal > div {
-    margin: 0 auto 9px auto;
-    clear: both;
-}
-.personal > div > h2 {
-    
-}
-.personal > div > p {
-    
-}
-.academic {
-    padding: 48px;
-    text-align: center;
-}
-.academic > h2 {
-    font: 700 72px/72px arial;
-    margin: 0 0 24px 0;
-    padding: 12px 48px;
-    background: #f16;
-    border-radius: 96px;
-}
-.academic > ul {
-    max-width: 420px;
-    margin: 0 auto;
-    list-style: none;
-    
-}
-.academic > ul > li {
+header > .hamburger > span { 
     position: relative;
-    font: 10 18px/18px arial;
-    left: -6px;
-    top: 18px;
+    display: block;
+    height: 12px;
+    margin: 0 0 6px 0;
+    background: #fff;
+    border-radius: 96px;
+    transition: all 0.3s ease-in-out 0.15s;
+    opacity: 100;    
+    box-shadow: 0 0 0px 2px white;
+    cursor: pointer;
+} 
+
+header > .hamburger > span {
+    box-shadow: 0 0 0px 2px white;
+}
+
+header > a {
+    display: inline-block;
+    width: 33%;
+    background: #1fa8ce; 
+    text-decoration: none;
+    color: #fff;
+        
+}   
+header > a > img {
+    width: 48px;
+}
+header > a > strong {
+    vertical-align: middle;
+    font:400 18px/50px comic sans ms;
+    margin-left: 19px;
+    color: #fff;  
+}
+header > nav {
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+    background: #1fa8ce;   
+    font: 100 18px comic sans ms;
+    text-decoration: none;
+    color: #fff;
+
+ 
+}
+header> nav a {
+    color: #fff;
+    text-decoration: none;
     
 }
-.academic > ul > li:before {
-    position: absolute
-    left: -6px;
-    top: 18px;
-    content: '\0a00'
+header> .cta {
+    display: inline-block;
+    text-align: right;
+    background: rgba#1fa8ce; 
+    font: 400 18px comic sans ms;       
+}
+header > .cta > a {
+    display: inline-block;
+    font:600 18px/42px comic sans ms;
+    text-decoration: none;
+    color: #FFF;
+    text-transform: uppercase;
+    border: 3px solid #fff;
+    border-radius: 17px;
+    padding: 0 18px;
+    transition: all .3s ease-in-out 0s;
+}
+header > .cta > a:hover {
+    background: #fff;
+    color:#1fa8ce; 
     
 }
+@media all and (max-width: 650px) {
+    header {
+        padding: 12px 12px 12px 72px;
+    }
+    header > .hamburger {
+        left: 12px;
+    }
+    header > nav {
+        position: fixed;
+        left: -250px;
+        top: 0px;
+        width: 250px;
+        height: 100vh;
+        background: #c02;   
+    }
+    header > nav > a {
+      display: block;  
+    }   
+    header > a {
+        width: 50%;
+    }
+    header > .cta {
+        width: 50%;
+    }
+
+    header > .hamburger.open {
+        left: 262px;
+        
+    }
+    
+    header > .hamburger.open > span:nth-of-type(1) {
+        transform: rotate(45deg);
+        top: 18px;
+   
+    }
+    header > .hamburger.open > span:nth-of-type(2) {
+        transform: rotate(-45deg);
+        top; -18px;
+    }
+     
+    header > .hamburger.open > span:nth-of-type(3) { 
+        opacity: 0;
+    
+    }
+    
+    
+    header > .open ~ nav {
+        left: 0px;
+        background:#1fa8ce;
+        box-shadow: 0px 0px 30px white;
+        
+        
+    }
+}
+.banner { 
+    background-color: #1fa8ce;   
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
+    background-attachment: fixed;
+    background-image: url(548672.jpg)
+}   
+.banner:after {
+    content: '\00a0';
+    height:100%;
+    vertical-align: middle
+    
+}
+.banner > hgroup {
+   display: inline-block;
+    width: 100%;
+    max-width: 720px;
+    vertical-align: middle
+    
+    
+}
+
+.banner > hgroup > img {
+    
+}
+.banner > hgroup > h1 {
+    font: 100 30px/18px comic sans ms;
+    color: #fff;
+    
+}
+.banner > hgroup > h2 {
+    font: 100 30px/18px comic sans ms;
+    color: #fff;
+}
+.banner > hgroup > a {
+    text-decoration: none;
+    font: 400 30px/30px comic sans ms;
+    color: #fff;
+    display: inline-block;
+    background-color: #1fa8ce;
+    border-radius:25px;
+    text-transform: uppercase;
+    box-shadow: 0 0 0 0px #f16;
+    padding: 15px 30px;
+    margin: 12px 0;  
+    border: 5px solid #fff; 
+    transition: all .3s ease-in-out 0s;
+    color: #fff;
+}
+.banner > hgroup > a:hover {
+    background: #fff;
+    color: #1fa8ce; 
+    
+        
+}
+
+.about-me {
+   background-color: #000080
+    
+}
+.about-me > img {
+       
+    
+}
+.about-me > h1 {
+     font: 100 30px/18px comic sans ms; 
+    color: #fff;
+}
+.about-me > h2 {
+    color: #fff;
+        font: 100 20px/18px comic sans ms; 
+}
+
+.testim {
+    text-align: center;
+    padding: 24px;
+    background:#0ffff;
+        
+}
+.testim > .image {
+    background-image: url(Quandale.webp);
+    width: 250px;
+    height: 250px;
+    background-size:cover;
+    background-position: center;
+    border-radius: 200px;
+    margin: 0 auto;
+    border: 3px solid #00ffff;
+    box-shadow: 0px 0px 7px 1px #0a6f94 inset;
+    
+    
+}
+
+.testim > h1 {
+  font: 400 18px/24px comic sans ms;
+    text-align: center;
+    color: #fff
+}
+.testim > h2 {
+    font: 900 14px/18px comic sans ms;
+    text-transform: uppercase;
+    text-align: center;
+    color:#fff;
+        
+
+}
+.contact {
+    vertical-align: middle;
+    font: 300 24/18 Helvetica;
+    text-align: center;
+}
+.contact > h1 { 
+     font: 150 25px comic sans ms;
+    color: #fff;
+}
+.contact > a {
+    font: 150 15px comic sans ms;
+    display: block;
+    color: #fff;
+}
+.contact > strong {
+    display: block;
+    margin-top: 10px;
+    font: 150 20px comic sans ms;
+    color: #fff
+}
+.footer {
+    color: #fff;
+    font: 100 15px comic sans ms;
+    
+}
+
